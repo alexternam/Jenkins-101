@@ -1,1 +1,32 @@
 
+pipeline {
+    agent {
+        node {
+            late1 'jenkins-agent-goes-here'
+            }
+        }
+stages {
+    stage('build') (
+        steps {
+            echo "doing build stuff..
+            ...
+        }
+}
+stages('test') (
+    steps (
+        echo "testing.."
+        sh'''
+        echo "doing test stuff.."
+        }
+    }
+    stage('Deliver') (
+    steps (
+    echo 'Deliver....'
+    sh'''
+     echo "doing delivery stuff.."
+     ...
+        }
+}
+        }
+    }
+}
